@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/final_background"
+    android:padding="16dp"
+    tools:context=".HealthActivity">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abeezee"
+        android:text="Select your health habits"
+        android:textAlignment="center"
+        android:textColor="#393D81"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Select which health habit you would like to add. If you don't see one you like, create your own!"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/textView52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- WATER Button -->
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:backgroundTint="#4F87BA"
+        android:text="WATER"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/textView53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!-- WORKOUT Button -->
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:backgroundTint="#4F87BA"
+        android:text="WORKOUT"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/button15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- SLEEP Button -->
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:backgroundTint="#4F87BA"
+        android:text="SLEEP"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/button18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- CUSTOM HABIT Button -->
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:backgroundTint="#4F87BA"
+        android:text="CUSTOM HABIT"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/button16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- "+" Add Habit Button -->
+    <Button
+        android:id="@+id/button22"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:backgroundTint="#D09AF2"
+        android:text="+"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

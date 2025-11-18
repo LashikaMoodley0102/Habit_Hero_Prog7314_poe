@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/final_background"
+    tools:context=".CustomGeneralHabitActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Page Title -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create General Goal"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#393D81"
+            android:fontFamily="@font/abeezee"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Goal Title -->
+        <EditText
+            android:id="@+id/editTextGeneralTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Goal Title"
+            android:backgroundTint="#B291DE"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Goal Description -->
+        <EditText
+            android:id="@+id/editTextGeneralDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Goal Description"
+            android:backgroundTint="#B291DE"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Optional Target -->
+        <EditText
+            android:id="@+id/editTextGeneralTarget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Target (optional)"
+            android:backgroundTint="#B291DE"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/buttonSaveGeneral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#E4AFE7"
+            android:fontFamily="@font/abeezee"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:text="Save Goal"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>

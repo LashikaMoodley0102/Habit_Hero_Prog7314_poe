@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/final_background"
+    tools:context=".CustomLifestyleHabitActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Page Title -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Custom Lifestyle Habit"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#393D81"
+            android:fontFamily="@font/abeezee"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Habit Title -->
+        <EditText
+            android:id="@+id/editTextHabitTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Habit Title"
+            android:backgroundTint="#B291DE"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Habit Description -->
+        <EditText
+            android:id="@+id/editTextHabitDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Habit Description"
+            android:backgroundTint="#B291DE"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Frequency -->
+        <EditText
+            android:id="@+id/editTextHabitFrequency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Frequency (e.g., Daily, Weekly)"
+            android:backgroundTint="#B291DE"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Start Date -->
+        <EditText
+            android:id="@+id/editTextHabitStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Start Date (YYYY-MM-DD)"
+            android:backgroundTint="#B291DE"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/buttonSaveHabit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#4FACBA"
+            android:fontFamily="@font/abeezee"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:text="Save Habit"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

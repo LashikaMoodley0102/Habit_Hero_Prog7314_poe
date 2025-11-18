@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/final_background"
+    tools:context=".CustomFinancialHabitActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Page Title -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Custom Finance Goal"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#393D81"
+            android:fontFamily="@font/abeezee"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Finance Goal Title -->
+        <EditText
+            android:id="@+id/editTextFinanceTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Goal Title"
+            android:backgroundTint="#B291DE"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Finance Description -->
+        <EditText
+            android:id="@+id/editTextFinanceDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Goal Description"
+            android:backgroundTint="#B291DE"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Target Amount -->
+        <EditText
+            android:id="@+id/editTextFinanceTarget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Target Amount (R)"
+            android:inputType="numberDecimal"
+            android:backgroundTint="#B291DE"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Current Amount -->
+        <EditText
+            android:id="@+id/editTextFinanceCurrent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Current Saved/Spent (R)"
+            android:inputType="numberDecimal"
+            android:backgroundTint="#B291DE"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/buttonSaveFinance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#9DA1E7"
+            android:fontFamily="@font/abeezee"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:text="Save Goal"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
